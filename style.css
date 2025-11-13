@@ -1,0 +1,28 @@
+body{
+  background-image: url("./thumbnail\ \(1\).png");
+  background-position: auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+}
+
+.nav-items{
+    text-decoration: none;
+    color: var(white);
+    font-weight: 600;
+    
+}
+.nav-items:hover{
+    color: var(blue);
+    transition: all  0.5s ease-in-out;
+    scale: 1.1;
+    a{
+        color: var(blue);
+    }
+}
