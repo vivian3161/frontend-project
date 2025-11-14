@@ -17,8 +17,9 @@ body{
   width: 2000px;
   color: white;
   float: left;
-  font-size: larger;
-  font-weight: 50px;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
 }
 .h1{
     font-size:xx-large;
@@ -34,28 +35,31 @@ body{
     text-align: left;
 }
 
-
-
-.nav-links{
-    display: flex;
-    gap: 20px;
-    justify-content: left;
-    justify-items:left;
-    list-style: none;
-    float: left;
-    color: #ffffff;
-
-}
-
-.nav-items{
-    text-decoration: none;
-    color: white;
-    font-weight: 800;
-    font-size: x-large;
-    float:left
-
+.navbar ul{
+    list-style-type: none;
+    background-color: #000000;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    position:static;
     
 }
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    position: sticky;
+    
+}
+.navbar li{
+    float: left;
+    position:sticky;
+    border-left: #ffffff;
+   
+}
+
 .nav-items:hover{
     color: var(blue);
     transition: all  0.5s ease-in-out;
@@ -139,14 +143,140 @@ head{
 .my-button {
     background-color: hsl(247, 80%, 47%); /* Blue background */
     color: white; /* White text */
-    border: none; /* No border */
     padding: 10px 20px; /* Padding around the text */
     font-size: 16px;
     cursor: pointer; /* Changes the mouse cursor to a hand on hover */
-    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .my-button:hover {
     background-color: #0056b3;
 }
+
+.btn{
+    background-color: rgb(184, 225, 212);
+    color: #000000;
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+    
+}
+
+.btn:hover{
+    background-color: rgb(245, 47, 245);
+} 
+
+.sub-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: ltr;
+    padding: 15px;
+    background-color:white;
+    height: auto;
+
+}
+
+.attend{
+    background-image: url(./class\ image.png);
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    height: 700px;
+    width: 100%;
+    font-size: xx-large;
+
+}
+.our-classes{
+    justify-content: center;
+    padding: 30%;
+    font-size:large;
+    font-weight: 200;
+    text-align: center;
+}
+.class-btn{
+    background-color: hsl(247, 80%, 47%); 
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+} 
+.class-btn:hover{
+     background-color: #0056b3;
+
+}
+
+.class-section{
+  background-image: url(./class\ photo.png);
+  background-position: auto;
+  background-attachment:fixed ;
+  background-size: cover;
+  padding: 50px;
+  height: 800px;
+  width: 3000px;
+  color: white;
+  float: left;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
+}
+
+.booking{
+    display: left;
+    background-color: #000000;
+
+}
+.name{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: left;
+}
+
+
+.about-us{
+    background-image: url(./about\ image.png);
+    background-position: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    width: 2000px;
+    color: white;
+    float: left;
+    font-size: xx-large;
+    font-weight: 70px;
+    padding: 50px;
+}
+
+.instructors{
+    display: left;
+    background-color: #000000;
+    height: 600px;
+
+}
+
+.teachers{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: left;  
+}
+
+.founder-img{
+    width: 700px; 
+    height: 350px; 
+    float: right; 
+    margin-left: 10px;   
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (1fr)*3;
+}
+
+
+
+
