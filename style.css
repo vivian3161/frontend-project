@@ -1,38 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body{
-    width: 100%;
-    overflow-x: hidden;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
 
-.hero{
-  background-image: url("./Header\ section.png");
-  background-position: auto;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 800px;
-  width: 2000px;
-  color: white;
-  float: left;
-  font-size: xx-large;
-  font-weight: 70px;
-  padding: 50px;
-}
-.h1{
-    font-size:xx-large;
-    font-weight:5000px;
-    text-align: center;
-    text-align: left;
-
-}
-.h11{
-    font-size:xx-large;
-    font-weight: 1000px;
-    text-align: center;
-    text-align: left;
 }
 
 .navbar ul{
@@ -41,7 +13,9 @@ body{
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    position:static;
+    position: fixed;
+    width: 2000px;
+
     
 }
 .navbar a{
@@ -51,30 +25,28 @@ body{
     display: block;
     text-align: center;
     position: sticky;
+
     
 }
 .navbar li{
     float: left;
     position:sticky;
     border-left: #ffffff;
-   
-}
-
-.nav-items:hover{
+} 
+.navbar:hover{
     color: var(blue);
-    transition: all  0.5s ease-in-out;
-    scale: 1.1;
-
+    
 }
 
 .border-container {
     width: 150%; /* Adjust as needed */
     border: 5px solid #333;
     padding: 20px;
-    overflow: hidden; /* Hide text outside the border */
+    overflow:hidden;
     position: relative; /* For positioning the moving text */
     background-color:rgb(80, 80, 233);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
     
 }
 .moving-text{
@@ -84,6 +56,7 @@ body{
     animation: moveText 30s linear infinite;
     color: white;
     gap: calc(10);
+    
 }
 @keyframes moveText {
     0% {
@@ -92,191 +65,133 @@ body{
     100% {
         transform: translateX(-100%); /* Move off-screen to the left */
     }
+}   
+
+.hero{
+  background-image: url("./Header\ section.png");
+  background-position: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+  width: 2000px;
+  color: white;
+  float: left;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 100%;
+
 }
 
-.dance image img{
+.h1{
+    position:absolute;
+    font-size: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.grid-container{
     display: grid;
-    grid-template-columns: 200px 1fr;
-    width: 100px;
-    height: 300px;
-    direction: rtl;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
 }
+.btn{
+   background-color: rgb(184, 225, 212);
+   color: #000000;
+   padding: 10px 10px;
+   font-size: 15px;
+   cursor: pointer;
+   text-decoration: none;
+ a{
+    color: #ffffff;
+    text-decoration: none;
+ }
+}
 
-
-.main-section{
-     display: grid;
-    grid-template-columns: 1fr 1fr;
-    direction: ltr;
-    padding: 15px;
-    background-color:white;
-    color: black;
-    height: auto;
-
+.btn:hover{
+     background-color: rgb(245, 47, 245);
 }
 
 .vision{
     background-image: url(./Title\ container.png);
     background-position: center;
     background-size: cover;
-    color: #ffffff;
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 600px;
     font-size: xx-large;
-    
-    
-}
-
-.who-we-are {
-    justify-content: center;
-    padding: 30%;
-    font-size:large;
-    font-weight: 200;
-    text-align: center;
-}
-head{
-    background-color: #000000;
-    height: 5%;
     color: #ffffff;
 }
+.who-we-are{
+    font-size: large;
+}
 
-.my-button {
+.who-we-are-btn{
     background-color: hsl(247, 80%, 47%); /* Blue background */
-    color: white; /* White text */
+    color:#ffffff; /* White text */
     padding: 10px 20px; /* Padding around the text */
     font-size: 16px;
     cursor: pointer; /* Changes the mouse cursor to a hand on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    position: left;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    
+    }
 }
-
-.my-button:hover {
+.who-we-are-btn:hover{
     background-color: #0056b3;
 }
 
-.btn{
-    background-color: rgb(184, 225, 212);
-    color: #000000;
-    padding: 10px 10px;
-    font-size: 15px;
-    cursor: pointer;
-
-    
-}
-
-.btn:hover{
-    background-color: rgb(245, 47, 245);
-} 
-
-.sub-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    direction: ltr;
-    padding: 15px;
-    background-color:white;
-    height: auto;
-
-}
-
-.attend{
-    background-image: url(./class\ image.png);
+.Class{
+    background-image: url(/class\ image.png);
     background-position: center;
     background-size: cover;
-    color: #ffffff;
-    height: 700px;
-    width: 100%;
+    height: 500px;
+    width: 600px;
     font-size: xx-large;
-
+    
 }
 .our-classes{
-    justify-content: center;
-    padding: 30%;
-    font-size:large;
-    font-weight: 200;
-    text-align: center;
-}
-.class-btn{
-    background-color: hsl(247, 80%, 47%); 
-    color: white;
-    padding: 10px 10px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-} 
-.class-btn:hover{
-     background-color: #0056b3;
-
+    font-size: large;
 }
 
-.class-section{
-  background-image: url(./class\ photo.png);
-  background-position: auto;
-  background-attachment:fixed ;
-  background-size: cover;
-  padding: 50px;
-  height: 800px;
-  width: 3000px;
-  color: white;
-  float: left;
-  font-size: xx-large;
-  font-weight: 70px;
-  padding: 50px;
+.our-class-btn{
+    background-color: hsl(247, 80%, 47%); /* Blue background */
+    color:#ffffff; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px;
+    cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+    position: left;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    
+    }
 }
 
-.booking{
-    display: left;
-    background-color: #000000;
-
-}
-.name{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: left;
+.our-class-btn:hover{
+    background-color: #0056b3;
 }
 
-
-.about-us{
-    background-image: url(./about\ image.png);
-    background-position: auto;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 800px;
-    width: 2000px;
-    color: white;
-    float: left;
-    font-size: xx-large;
-    font-weight: 70px;
-    padding: 50px;
+.founder-1 img{
+    height: 400px;
+    width: 700px;
+}
+.founder-1{
+    background-color: rgb(234, 17, 234);
+    font-size: larger;
 }
 
-.instructors{
-    display: left;
-    background-color: #000000;
-    height: 600px;
-
+.founder-2 img{
+    height:400px;
+    width:700px;
 }
-
-.teachers{
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    display: left;  
+.founder-2{
+    background-color: rgb(157, 236, 210);
+    font-size: larger;
 }
-
-.founder-img{
-    width: 700px; 
-    height: 350px; 
-    float: right; 
-    margin-left: 10px;   
-}
-
-
-.main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: (1fr)*3;
-}
-
-
 
 

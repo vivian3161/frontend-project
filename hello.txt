@@ -1,0 +1,147 @@
+.hero{
+  background-image: url("./Header\ section.png");
+  background-position: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+  width: 2000px;
+  color: white;
+  float: left;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 100%;
+
+}
+
+.h1{
+    position:absolute;
+    font-size: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+ .hero-image {
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* Classes Section (similar grid layout, adjust colors) */
+.classes-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Add specific red background and white text colors */
+}
+
+/* Founders Section (adjust layout as needed for profiles) */
+.founders-section {
+    display: left; /* Can use flexbox to arrange items horizontally */
+    /* Adjust styles */
+    position: left;
+    }
+
+.vision img{
+    height: 700px;
+    width: 800px;
+    direction: ltr;
+    padding-right: 100px;
+    size: cover;
+    position: left;
+    float: left;
+}
+.overlay-text{
+    position: fixed;
+    font-size: xx-large;
+}
+
+.my-button {
+    background-color: hsl(247, 80%, 47%); /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px;
+    cursor: pointer; /* Changes the mouse cursor to a hand on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.my-button:hover {
+    background-color: #0056b3;
+}
+
+.class-btn{
+    background-color: rgb(184, 225, 212);
+    color: #000000;
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+    
+}
+
+.class-btn:hover{
+    background-color: rgb(245, 47, 245);
+} 
+
+.about-us{
+  background-image: url("./about\ image.png");
+  background-position: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 2000px;
+  color: white;
+  float: left;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
+  
+}
+
+.instructors{
+    display: left;
+    background-color: #000000;
+    height: 40px;
+
+}
+
+.teachers{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: left;  
+}
+
+.booking{
+    background-color: #000000;
+    color: #ffffff;
+    height: fit-content;
+}
+.class-section{
+  background-image: url("./class\ photo.png");
+  background-position: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: 2000px;
+  color: white;
+  float: left;
+  font-size: xx-large;
+  font-weight: 70px;
+  padding: 50px;
+  
+}
+.overlay-text{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: xx-large;
+    width: 500px;
+    height: 10px;
+}
